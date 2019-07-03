@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Bienvenidos | Mis datos</title>
+      <link rel="icon" type="image/png" href="estados-animo-02.png">
+      <meta name="description" content="Esta página muestra visualizaciones de datos sobre la carga académica y otros factores que pueden afectar el desempeño en la carrera, los datos recolectados son de Estefanía Maturana">
+      <meta property="og:type" content="website"/>
+      <meta property="og:title" content="Vida Universitaria"/>
+      <meta property="og:description" content="Esta página muestra visualizaciones de datos sobre la carga académica y otros factores que pueden afectar el desempeño en la carrera, los datos recolectados son de Estefanía Maturana"/>
+      <meta property="og:image" content="https://www.ssim.ac.in/wp-content/uploads/2018/09/1-college-life.jpg"/>
+      
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Vida Universitaria" />
+      <meta name="twitter:description" content="Esta página muestra visualizaciones de datos sobre la carga académica y otros factores que pueden afectar el desempeño en la carrera, los datos recolectados son de Estefanía Maturana" />
+      <meta name="twitter:image" content="https://www.ssim.ac.in/wp-content/uploads/2018/09/1-college-life.jpg" />
+  </head>
+ <body>
+  <div class="container pb-5">
+    <div class="row pb-5">  
+      <div class="col-sm-10 pt-4 pb-2">
+        <h1>Tiempo en la FAU</h1>
+      </div>
+      <div class="col-sm-2 text-right pt-5 pb-2 d-none d-sm-block">
+        <a href="info.html" id="especial5">Info</a>
+      </div>
+      <div class="col-sm-12 p-0 mb-3" id="vis">
+        <!--acá estoy metiendo el canvas con p5.js-->
+      </div>
+      <div class="col-sm-8">
+        <h3 class="border-bottom py-2" id="tercera">Descripción</h3>
+        <p>La siguiente vizualización presenta en gráficos de torta los porcentajes en relación al tiempo que paso en la Facultad con el tiempo que paso en mi hogar.</p>
+          
+           <p> Los datos utilizados en esta visualización están almacenados en <a href="https://api.myjson.com/bins/nstxf">este JSON.</a></p>
+      </div>
+      <div class="col-sm-4 small">
+        <h5 class="border-bottom pt-3 pb-2" id="lateral2">Datos extras</h5>
+        <p>Los datos recopilados son de una semana común en la universidad.
+        La sección en verde es el tiempo en mi hogar y el negro el tiempo en la U.</p>
+      </div>
+    </div><!--acá cierro el row-->
+  </div><!--acá cierro el container-->
+
+  <nav class="navbar fixed-bottom navbar-expand-md navbar-light" id="barracolor4">
+    <div class="container">
+     <a class="navbar-brand" href="index.html" id="barra">Mis visualizaciones</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="segunda.html">tiempo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tercera.html">viaje</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cuarta.html">sueño</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="quinta.html">trabajo</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link" href="info.html">Más info</a>
+          </li>                           
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Estábamos en p5.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+    <script>
+      var w, h;
+      function setup(){
+        var w = document.getElementById('vis').offsetWidth;
+        var h = w/2;
+        createCanvas(w,h).parent("vis");
+        background(255);
+      }
+      function draw(){  
+          
+  // GRÁFICO      
+          
+          noStroke();
+          
+// x, y, w, h, ang inicio, ang termino.
+          
+     
+          
+        
+          
+            // lunes
+     fill(0, 0, 0);
+     arc(100, 300, 150, 150, 0, 33.3);
+          
+    fill(114, 255, 175);
+    arc(100, 300, 150, 150, 33.3, 0);
+          
+          
+          // martes
+    fill(0, 0, 0);
+     arc(300, 300, 150, 150, 0, -41.6);
+          
+    fill(114, 255, 175);
+    arc(300, 300, 150, 150, -41.6, 0);
+          
+          
+          // miercoles
+    fill(0, 0, 0);
+     arc(500, 300, 150, 150, 0, -25);
+          
+    fill(114, 255, 175);
+    arc(500, 300, 150, 150, -25, 0);
+          
+              
+        // jueves
+    fill(0, 0, 0);
+     arc(700, 300, 150, 150, 0, -25);
+          
+    fill(114, 255, 175);
+    arc(700, 300, 150, 150, -25, 0);
+                
+          
+          // viernes
+    fill(0, 0, 0);
+     arc(900, 300, 150, 150, 0, 33.3);
+          
+    fill(114, 255, 175);
+    arc(900, 300, 150, 150, 33.3, 0);
+            
+          
+          
+          
+          
+          
+          // Texto de gráficos
+             
+          
+    
+    fill(0, 0, 0);
+    textSize(20);
+    text("66,7%", 80, 280);
+          
+    fill(0, 0, 0);
+    textSize(20);
+    text("Lunes", 70, 150);
+          
+          
+    fill(0, 0, 0);
+    textSize(20);
+    text("58,4%", 280, 280);
+    
+    fill(0, 0, 0);
+    textSize(20);
+    text("Martes", 270, 150);
+          
+          
+          
+    fill(0, 0, 0);
+    textSize(20);
+    text("75%", 480, 280); 
+    
+    fill(0, 0, 0);
+    textSize(20);
+    text("Miércoles", 470, 150);
+          
+          
+          
+    fill(0, 0, 0);
+    textSize(20);
+    text("75%", 680, 280);
+          
+    fill(0, 0, 0);
+    textSize(20);
+    text("Jueves", 670, 150);
+          
+          
+          
+   fill(0, 0, 0);
+    textSize(20);
+    text("66,7%", 880, 280);
+          
+    fill(0, 0, 0);
+    textSize(20);
+    text("Viernes", 870, 150);
+    
+          
+    
+         
+      }
+    </script>
+  </body>
+</html>

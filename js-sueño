@@ -1,0 +1,36 @@
+https://api.myjson.com/bins/nw4tz
+
+{
+
+    "fau": [
+        {
+            "nombre": "Lunes",
+            "durmiendo": 4
+        },
+        {
+            "nombre": "Martes",
+            "durmiendo": 5
+        },
+        {
+            "nombre": "Miércoles",
+            "durmiendo": 3
+        },
+        {
+            "nombre": "Jueves",
+            "durmiendo": 5
+        },
+        {
+            "nombre": "Viernes",
+            "durmiendo": 6
+        },
+        {
+            "nombre": "Sábado",
+            "durmiendo": 6
+        },
+        {
+            "nombre": "Domingo",
+            "durmiendo": 6
+        }
+    ]
+
+}

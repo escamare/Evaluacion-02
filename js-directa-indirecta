@@ -1,0 +1,150 @@
+https://api.myjson.com/bins/ztscj
+
+[
+
+    {
+        "nombre": "Taller de Diseño Gráfico V",
+        "codigo": "DGP501",
+        "creditaje": 9,
+        "directas": 6,
+        "dedicacion": [
+            
+            {
+                "nombre": "Estefanía Maturana",
+                "horas": [
+                    12,
+                    11,
+                    14,
+                    13
+                ]
+            }
+        ]
+    },
+    {
+        "nombre": "Seminario Gráfica Computacional I",
+        "codigo": "DGP502",
+        "creditaje": 3,
+        "directas": 3,
+        "dedicacion": [
+            
+            {
+                "nombre": "Estefanía Maturana",
+                "horas": [
+                    8,
+                    5,
+                    4,
+                    4
+                ]
+            }
+        ]
+    },
+    {
+        "nombre": "Seminario Producción Audiovisual I",
+        "codigo": "DGP503",
+        "creditaje": 3,
+        "directas": 3,
+        "dedicacion": [
+            
+            {
+                "nombre": "Estefanía Maturana",
+                "horas": [
+                    4,
+                    4,
+                    8,
+                    4
+                ]
+            }
+        ]
+    },
+    {
+        "nombre": "Seminario de Diseño Gráfico I",
+        "codigo": "DGP504",
+        "creditaje": 5,
+        "directas": 3,
+        "dedicacion": [
+            
+            {
+                "nombre": "Estefanía Maturana",
+                "horas": [
+                    15,
+                    7,
+                    21,
+                    17
+                ]
+            }
+        ]
+    },
+    {
+        "nombre": "Publicidad",
+        "codigo": "DGP505",
+        "creditaje": 3,
+        "directas": 3,
+        "dedicacion": [
+            
+            {
+                "nombre": "Estefanía Maturana",
+                "horas": [
+                    4,
+                    23,
+                    2,
+                    4
+                ]
+            }
+        ]
+    },
+    {
+        "nombre": "Seminario de Gestión I",
+        "codigo": "DGP506",
+        "creditaje": 3,
+        "directas": 3,
+        "dedicacion": [
+            
+            {
+                "nombre": "Estefanía Maturana",
+                "horas": [
+                    5,
+                    3,
+                    3,
+                    3
+                ]
+            }
+        ]
+    },
+    {
+        "nombre": "Práctica Profesional I",
+        "codigo": "DGP507",
+        "creditaje": 2,
+        "directas": 0,
+        "dedicacion": [
+           
+            {
+                "nombre": "Estefanía Maturana",
+                "horas": [
+                    34,
+                    23,
+                    0,
+                    1
+                ]
+            }
+        ]
+    },
+    {
+        "nombre": "Electivo III",
+        "codigo": "DE3",
+        "creditaje": 3,
+        "directas": 3,
+        "dedicacion": [
+        
+            {
+                "nombre": "Estefanía Maturana",
+                "horas": [
+                    4,
+                    5,
+                    5,
+                    4
+                ]
+            }
+        ]
+    }
+
+]

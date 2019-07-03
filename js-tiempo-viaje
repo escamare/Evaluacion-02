@@ -1,0 +1,26 @@
+https://api.myjson.com/bins/1d0kxv
+
+{
+  "viaje": [
+    {
+      "dia": "Lunes",
+      "minutos": 30
+    },
+    {
+      "dia": "Martes",
+      "minutos": 35
+    },
+    {
+      "dia": "Miércoles",
+      "minutos": 17
+    },
+    {
+      "dia": "Jueves",
+      "minutos": 25
+    },
+    {
+      "dia": "Viernes",
+      "minutos": 25
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+
+https://api.myjson.com/bins/nstxf
+
+[{
+"nombre" : "Lunes",
+
+"Tiempo en FAU" : 8,
+
+"Tiempo fuera de Fau" : 16
+},
+{
+
+"nombre" : "Martes",
+
+"Tiempo en FAU" : 10,
+
+"Tiempo fuera de Fau" : 14
+},
+{
+
+"nombre" : "Miércoles",
+
+"Tiempo en FAU" : 6,
+
+"Tiempo fuera de Fau" : 18
+},
+{
+
+"nombre" : "Jueves",
+
+"Tiempo en FAU" : 6,
+
+"Tiempo fuera de Fau" : 18
+},
+{
+
+"nombre" : "Viernes",
+
+"Tiempo en FAU" : 8,
+
+"Tiempo fuera de Fau" : 16
+}]
+
+
+
+
+
